@@ -157,6 +157,65 @@
             text-decoration: underline;
             color: #ffecb3;
         }
+        <style>
+    /* Tối ưu hóa hiển thị trên các kích thước màn hình khác nhau */
+    @media only screen and (max-width: 600px) {
+        body {
+            padding: 10px;
+        }
+
+        .info-card {
+            padding: 20px;
+            width: 100%;
+        }
+
+        .info-card img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .info-card h1 {
+            font-size: 22px;
+        }
+
+        .info-card h2 {
+            font-size: 18px;
+        }
+
+        .info-card p {
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        .info-card {
+            width: 80%;
+        }
+
+        .info-card h1 {
+            font-size: 26px;
+        }
+
+        .info-card h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (min-width: 1025px) {
+        .info-card {
+            width: 50%;
+        }
+
+        .info-card h1 {
+            font-size: 30px;
+        }
+
+        .info-card h2 {
+            font-size: 24px;
+        }
+    }
+</style>
+
     </style>
 </head>
 <body>
